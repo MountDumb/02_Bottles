@@ -2,29 +2,29 @@
 {
     public class Song
     {
-        public string CountBottles(int b)
+        public string CountBottles(int bottles)
         {
             string s = "";
-            if (b == 0)
+            if (bottles == 0)
             {
                 return " No more bottles of beer on the wall.";
             }
 
-            else if (b == 1)
+            else if (bottles == 1)
             {
-                s = b + " bottle of beer on the wall. "
-                  + b + " bottle of beer."
+                s = bottles + " bottle of beer on the wall. "
+                  + bottles + " bottle of beer."
                   + " Take one down and pass it around."
                   + " No more bottles of beer on the wall.";
                 return s;
             }
-            else if (b > 1)
+            else if (bottles > 1)
             {
-                s += b + " bottles of beer on the wall. "
-                + b + " bottles of beer."
+                s += bottles + " bottles of beer on the wall. "
+                + bottles + " bottles of beer."
                 + " Take one down and pass it around.";
 
-                for (int i = b - 1; i > 1; i--)
+                for (int i = bottles - 1; i > 1; i--)
                 {
                     s = s + " " + i + " bottles of beer on the wall. "
                         + i + " bottles of beer on the wall. " +
